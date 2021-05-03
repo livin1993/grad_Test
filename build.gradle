@@ -31,3 +31,9 @@ dependencies {
     compile group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '4.2.2'
     
 }
+
+test{
+	useTestNG(){
+	suites 'TestNG_Test.xml'
+	}
+}
