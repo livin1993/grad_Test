@@ -32,7 +32,7 @@ dependencies {
     
 }
 
-task runtest{ 
+tasks runtest{ 
 
 	TestNG_Test.xml
 }
