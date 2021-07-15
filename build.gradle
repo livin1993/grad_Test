@@ -32,7 +32,8 @@ dependencies {
     
 }
 
-tasks runtest{ 
-
-	TestNG_Test.xml
+task test{
+	useTestNG(){
+	suites 'TestNG_Test.xml'
+	}
 }
