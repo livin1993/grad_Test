@@ -32,8 +32,10 @@ dependencies {
     
 }
 
-task test1{
-	useTestNG(){
-	suites 'TestNG_Test.xml'
-	}
+test {     
+ useTestNG() {      
+      useDefaultListeners = true      
+      suiteXmlFiles << new File("TestNG_Test.xml")         
+      setSuiteXmlFiles(suiteXmlFiles)    
+    }
 }
